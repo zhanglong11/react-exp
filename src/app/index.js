@@ -12,6 +12,10 @@ import './style.less'
 moment.locale('zh-cn');
 export default class App extends Component {
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3e3413333b5689fb6f1aa8e59cfabf1b439f6f88
     render() {
         return (<LocaleProvider locale={zh_CN}>
             <Router>

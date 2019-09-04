@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React,{useEffect} from 'react';
+=======
+import React from 'react';
+>>>>>>> 3e3413333b5689fb6f1aa8e59cfabf1b439f6f88
 import {Layout, Menu} from 'antd';
 import {withRouter} from 'react-router-dom';
 import NavLeft from '@Components/NavLeft'
@@ -6,6 +10,7 @@ import NavLeft from '@Components/NavLeft'
 const {Content, Sider} = Layout;
 
 const Main=props=>{
+<<<<<<< HEAD
     useEffect(()=>{
         isLogin();
     },[])
@@ -18,6 +23,8 @@ const Main=props=>{
         }
     }
 
+=======
+>>>>>>> 3e3413333b5689fb6f1aa8e59cfabf1b439f6f88
     return (
         <Layout style={{height: '100%'}}>
             <Layout>

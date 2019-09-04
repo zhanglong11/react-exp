@@ -1,17 +1,25 @@
 import React, {Component} from 'react';
 import {Button, Input} from 'antd';
+<<<<<<< HEAD
 import './style.less';
 
 const Login = props => {
 
     const login = () => {
         localStorage.setItem('isLogin', true);
+=======
+const Login=props=>{
+
+    const login=()=>{
+        localStorage.setItem('isLogin',true);
+>>>>>>> 3e3413333b5689fb6f1aa8e59cfabf1b439f6f88
         props.history.push({
             pathname: `/main`
         })
     }
 
     return (
+<<<<<<< HEAD
         <div className="login-wrapper">
             <div className="login-container">
                 <h1 className="login-title">
@@ -36,6 +44,12 @@ const Login = props => {
                 </div>
             </div>
 
+=======
+        <div>
+            <Input/>
+            <Input/>
+            <Button type='primary' onClick={login}>登录</Button>
+>>>>>>> 3e3413333b5689fb6f1aa8e59cfabf1b439f6f88
         </div>
     )
 }
