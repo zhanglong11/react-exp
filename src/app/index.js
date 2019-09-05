@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
-import {LocaleProvider} from 'antd';
 import {Route, Switch,HashRouter as Router} from 'react-router-dom';
-import zh_CN from 'antd/lib/locale-provider/zh_CN';
 import moment from 'moment';
 import 'moment/locale/zh-cn';
 import Login from '@Pages/Login';
@@ -11,13 +9,8 @@ import './style.less'
 
 moment.locale('zh-cn');
 export default class App extends Component {
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 3e3413333b5689fb6f1aa8e59cfabf1b439f6f88
     render() {
-        return (<LocaleProvider locale={zh_CN}>
+        return (
             <Router>
                 <Switch>
                     <Route exact path="/login" component={Login}/>
@@ -27,7 +20,6 @@ export default class App extends Component {
                         </Main>
                     }/>
                 </Switch>
-            </Router>
-        </LocaleProvider>)
+            </Router>)
     }
 }

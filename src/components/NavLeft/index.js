@@ -1,15 +1,34 @@
-import React from "react";
+import React,{useState,useEffect}from "react";
 import {Menu} from "antd";
 import MenuConfig from "../../config/menuList";
 
 const SubMenu = Menu.SubMenu;
 
 const NavLeft=props=>{
+    const limit=props.limit;
+    console.log(limit)
     const changeRoute=(key)=>{
         props.history.push({
             pathname: `${key}`
         })
     }
+
+    useEffect(()=>{
+        // initNav(MenuConfig);
+    },[]);
+
+    // const initNav=(menuList)=>{
+    //     menuList.map(m=>{
+    //         if(m.children&&m.children.length){
+    //             return initNav(m.children);
+    //         }
+    //         debugger;
+    //         if(limit.includes(m.limit)){
+    //            return m
+    //         }
+    //     });
+    //    return MenuConfig
+    // }
 
     const renderMenu = (MenuConfig) => {
         return MenuConfig.map(item => {
